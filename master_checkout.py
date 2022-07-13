@@ -57,7 +57,7 @@ for directory in all_current_directories:
 
         os.chdir('..')
 
-print("\n","\n")
+print("\n")
 
 if directories_with_failures:
     print(f"{bcolors.FAIL} There were failures checking out to the following directories: {str(directories_with_failures)}{bcolors.ENDC}")
