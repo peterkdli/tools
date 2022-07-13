@@ -1,3 +1,15 @@
+# master_checkout.py is designed to check out and pull from master all of your repositories.
+# It works on the assumption that it lives alongside your git repos, something like this:
+# workspace/
+#   ├─ backend/
+#   ├─ frontend/
+#   ├─ tda/
+#   ├─ tda_amadeus/
+#   ├─ master_checkout.py
+
+# if this applies, simply run the file and it will checkout all of your projects. If there
+# are any problems, it will report back the projects that failed so you can check if you 
+# had any leftover code sitting about. 
 import os
 import subprocess
 
