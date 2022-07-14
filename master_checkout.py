@@ -88,4 +88,4 @@ print("\n")
 if directories_with_failures:
     print(f"{bcolors.FAIL} There were failures checking out to the following directories: {str(directories_with_failures)}{bcolors.ENDC}")
 else:
-    print(f"{bcolors.OKGREEN}Successfully checked out and pulled from master in all directories{bcolors.ENDC}")
+    print(f"{bcolors.OKGREEN}Successfully checked out and pulled from master or main in all directories{bcolors.ENDC}")
