@@ -14,7 +14,7 @@
 # had any leftover code or commits leftover. 
 # If you have any projects that have a primary branch as `main` instead of `master` , add them as strings
 # to the following constant:
-PROJECTS_WITH_MAIN_BRANCH = ['tools']
+PROJECTS_WITH_MAIN_BRANCH = ['tools', 'tda']
 
 # USAGE (in top level directory)
 # python master_checkout.py
