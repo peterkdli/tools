@@ -1,0 +1,145 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:awsse="http://xml.amadeus.com/2010/06/Session_v3" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+    <soap:Header>
+        <wsa:To>http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+        <wsa:From>
+            <wsa:Address>https://nodeD3.production.webservices.amadeus.com/1ASIWVPKVPK</wsa:Address>
+        </wsa:From>
+        <wsa:Action>http://webservices.amadeus.com/Ticket_RebookAndRepricePNR_1.0</wsa:Action>
+        <wsa:MessageID>urn:uuid:d408aba6-8c6d-4e14-e59b-3283f390475f</wsa:MessageID>
+        <wsa:RelatesTo RelationshipType="http://www.w3.org/2005/08/addressing/reply">
+            e3a57a23-cd91-4d99-af49-56c7381e8819
+        </wsa:RelatesTo>
+        <awsse:Session TransactionStatusCode="InSeries">
+            <awsse:SessionId>0H4IECITVO</awsse:SessionId>
+            <awsse:SequenceNumber>2</awsse:SequenceNumber>
+            <awsse:SecurityToken>2TPYISLQY0A5W1OBWRK8ISPJG2</awsse:SecurityToken>
+        </awsse:Session>
+    </soap:Header>
+    <soap:Body>
+        <AMA_TicketRebookAndRepricePNRRS xmlns="http://xml.amadeus.com/2010/06/Ticket_RebookAndRepricePNR_v1"
+                                         xmlns:ns2="http://xml.amadeus.com/2010/06/Retailing_Types_v2"
+                                         xmlns:ns6="http://xml.amadeus.com/2010/06/FareInternalTypes_v2"
+                                         TransactionIdentifier="1PT$T46FEBXS1$A6P8O86SDCI1" Version="1.0">
+            <Success>
+                <Reservation BookingIdentifier="LV4VB6"/>
+                <Rebooking>
+                    <CancelledElements>
+                        <ns2:Ref TattooType="ST" TattooValue="2"/>
+                        <ns2:Ref TattooType="ST" TattooValue="1"/>
+                    </CancelledElements>
+                    <Bounds>
+                        <Bound NIP="1">
+                            <Segment LineNumber="2" RequestID="SEG1" TattooType="ST" TattooValue="5" bkgClass="B"
+                                     isOpenSegment="false" segmentStatus="HK">
+                                <ns2:serviceProvider code="LH" name="LUFTHANSA"/>
+                                <ns2:identifier>031</ns2:identifier>
+                                <ns2:start dateTime="2023-07-18T19:00:00">
+                                    <ns2:locationCode>HAM</ns2:locationCode>
+                                </ns2:start>
+                                <ns2:end dateTime="2023-07-18T20:10:00">
+                                    <ns2:locationCode>FRA</ns2:locationCode>
+                                </ns2:end>
+                            </Segment>
+                            <Segment LineNumber="3" RequestID="SEG2" TattooType="ST" TattooValue="6" bkgClass="B"
+                                     isOpenSegment="false" segmentStatus="HK">
+                                <ns2:serviceProvider code="LH" name="LUFTHANSA"/>
+                                <ns2:identifier>9572</ns2:identifier>
+                                <ns2:start dateTime="2023-07-18T21:15:00">
+                                    <ns2:locationCode>FRA</ns2:locationCode>
+                                </ns2:start>
+                                <ns2:end dateTime="2023-07-18T22:25:00">
+                                    <ns2:locationCode>TRS</ns2:locationCode>
+                                </ns2:end>
+                            </Segment>
+                        </Bound>
+                    </Bounds>
+                    <FareDiscounts/>
+                </Rebooking>
+                <Repricing>
+                    <ItineraryRepricing>
+                        <PricingDetails>
+                            <PricingRecords>
+                                <PricingRecord>
+                                    <ns6:PaxName FirstName="Dennis" LastName="Wallis" Title="MR"/>
+                                    <ns6:Price Amount="62000" CurrencyCode="EUR" DecimalPlaces="2" Type="NewBase"/>
+                                    <ns6:Price Amount="62000" CurrencyCode="EUR" DecimalPlaces="2" Type="OldBase"/>
+                                    <ns6:Price Amount="0" CurrencyCode="EUR" DecimalPlaces="2" Type="ResidualValue"/>
+                                    <ns6:Price Amount="78257" CurrencyCode="EUR" DecimalPlaces="2" Type="NewTotalFare"/>
+                                    <ns6:Price Amount="16257" CurrencyCode="EUR" DecimalPlaces="2" Type="NewTax"/>
+                                    <ns6:Price Amount="6000" CurrencyCode="EUR" DecimalPlaces="2"
+                                               Type="TotalAdditionalCollection"/>
+                                    <ns6:Price Amount="16257" CurrencyCode="EUR" DecimalPlaces="2" Type="OldTax"/>
+                                    <ns6:Price Amount="0" CurrencyCode="EUR" DecimalPlaces="2" Type="BalanceBase"/>
+                                    <ns6:Price Amount="6000" CurrencyCode="EUR" DecimalPlaces="2" Type="GrandTotal"/>
+                                    <ns6:Price Amount="0" CurrencyCode="EUR" DecimalPlaces="2" Type="BalanceTax"/>
+                                    <ns6:Price Amount="0" CurrencyCode="EUR" DecimalPlaces="2" Type="TicketDifference"/>
+                                    <ns6:Price Amount="6000" CurrencyCode="EUR" DecimalPlaces="2" Type="Penalty"/>
+                                    <ns6:Price Amount="78257" CurrencyCode="EUR" DecimalPlaces="2" Type="OldTotalFare"/>
+                                    <ns6:PricingInfo PricingType="TQR">
+                                        <ns6:AssociatedPNRElement Tattoo="2" Type="PT"/>
+                                        <ns6:AssociatedPNRElement Tattoo="5" Type="ST"/>
+                                        <ns6:AssociatedPNRElement Tattoo="6" Type="ST"/>
+                                    </ns6:PricingInfo>
+                                </PricingRecord>
+                                <PricingRecord>
+                                    <ns6:PaxName FirstName="Dennis" LastName="Wallis" Title="MR"/>
+                                    <ns6:Price Amount="62000" CurrencyCode="EUR" DecimalPlaces="2" Type="NewBase"/>
+                                    <ns6:Price Amount="0" CurrencyCode="EUR" DecimalPlaces="2" Type="GrandTotal"/>
+                                    <ns6:Price Amount="0" CurrencyCode="EUR" DecimalPlaces="2" Type="Total"/>
+                                    <ns6:Tax Amount="716" CurrencyCode="EUR" DecimalPlaces="2" Indicator="PD"
+                                             IsoCode="DE" NatureCode="SE"/>
+                                    <ns6:Tax Amount="1273" CurrencyCode="EUR" DecimalPlaces="2" Indicator="PD"
+                                             IsoCode="OY" NatureCode="CB"/>
+                                    <ns6:Tax Amount="2353" CurrencyCode="EUR" DecimalPlaces="2" Indicator="PD"
+                                             IsoCode="RA" NatureCode="EB"/>
+                                    <ns6:Tax Amount="1165" CurrencyCode="EUR" DecimalPlaces="2" Indicator="PD"
+                                             IsoCode="RD" NatureCode="DP"/>
+                                    <ns6:Tax Amount="9000" CurrencyCode="EUR" DecimalPlaces="2" Indicator="PD"
+                                             IsoCode="YQ" NatureCode="AD"/>
+                                    <ns6:Tax Amount="1750" CurrencyCode="EUR" DecimalPlaces="2" Indicator="PD"
+                                             IsoCode="YR" NatureCode="VB"/>
+                                    <ns6:PricingInfo Endorsement="EUR620.00 NONREF - FARE RESTRICTION MAY APPLY"
+                                                     FareCalc="HAM LH X/FRA LH TRS683.25NUC683.25END ROE0.907418"
+                                                     PricingRecordRefIDs="0" PricingType="TST">
+                                        <ns6:AssociatedPNRElement Tattoo="2" Type="PT"/>
+                                        <ns6:AssociatedPNRElement Tattoo="5" Type="ST"/>
+                                        <ns6:AssociatedPNRElement Tattoo="6" Type="ST"/>
+                                    </ns6:PricingInfo>
+                                    <ns6:FareComponent Destination="TRS" Number="1" Origin="HAM" Type="FC">
+                                        <ns6:AssociatedPNRElement Tattoo="5" Type="ST"/>
+                                        <ns6:AssociatedPNRElement Tattoo="6" Type="ST"/>
+                                        <ns6:FareBasis FareBasisCode="B06CLSEV"/>
+                                        <ns6:FareFamily Name="CLASSIC" Owner="LH"/>
+                                    </ns6:FareComponent>
+                                    <ns6:Coupon SegmentTattoo="5">
+                                        <ns6:FareBasis FareBasisCode="B06CLSEV"/>
+                                        <ns6:FreeBagAllowance Measure="1" Type="N"/>
+                                        <ns6:DateValidity Type="NVA">2023-07-18</ns6:DateValidity>
+                                        <ns6:DateValidity Type="NVB">2023-07-18</ns6:DateValidity>
+                                    </ns6:Coupon>
+                                    <ns6:Coupon SegmentTattoo="6">
+                                        <ns6:FareBasis FareBasisCode="B06CLSEV"/>
+                                        <ns6:FreeBagAllowance Measure="1" Type="N"/>
+                                        <ns6:DateValidity Type="NVA">2023-07-18</ns6:DateValidity>
+                                        <ns6:DateValidity Type="NVB">2023-07-18</ns6:DateValidity>
+                                    </ns6:Coupon>
+                                </PricingRecord>
+                                <PricingRecord>
+                                    <ns6:PaxName FirstName="Dennis" LastName="Wallis" Title="MR"/>
+                                    <ns6:Price Amount="6000" CurrencyCode="EUR" DecimalPlaces="2" Type="Total"/>
+                                    <ns6:Price Amount="6000" CurrencyCode="EUR" DecimalPlaces="2" Type="ExchangeValue"/>
+                                    <ns6:PricingInfo PricingRecordRefIDs="60" PricingType="TSM" RFIC="D" RFISC="993">
+                                        <ns6:AssociatedPNRElement Tattoo="2" Type="PT"/>
+                                        <ns6:AssociatedPNRElement Tattoo="5" Type="ST"/>
+                                        <ns6:AssociatedPNRElement Tattoo="6" Type="ST"/>
+                                    </ns6:PricingInfo>
+                                </PricingRecord>
+                            </PricingRecords>
+                        </PricingDetails>
+                    </ItineraryRepricing>
+                </Repricing>
+            </Success>
+        </AMA_TicketRebookAndRepricePNRRS>
+    </soap:Body>
+</soap:Envelope>

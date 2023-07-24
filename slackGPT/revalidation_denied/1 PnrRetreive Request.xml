@@ -1,0 +1,46 @@
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap-env:Header>
+        <ns0:MessageID xmlns:ns0="http://www.w3.org/2005/08/addressing">fbd69217-06f1-4302-a476-79086d857139
+        </ns0:MessageID>
+        <ns1:Action xmlns:ns1="http://www.w3.org/2005/08/addressing">http://webservices.amadeus.com/PNRRET_17_1_1A
+        </ns1:Action>
+        <ns2:To xmlns:ns2="http://www.w3.org/2005/08/addressing">
+            https://nodeD3.production.webservices.amadeus.com/1ASIWVPKVPK
+        </ns2:To>
+        <ns3:AMA_SecurityHostedUser xmlns:ns3="http://xml.amadeus.com/2010/06/Security_v1">
+            <ns3:UserID POS_Type="1" PseudoCityCode="BERL12221" AgentDutyCode="SU" RequestorType="U"/>
+        </ns3:AMA_SecurityHostedUser>
+        <wsse:Session xmlns:wsse="http://xml.amadeus.com/2010/06/Session_v3" TransactionStatusCode="Start"/>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken>
+                <wsse:Username>WSVPKVPK</wsse:Username>
+                <wsse:Password
+                        Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">
+                    SECRET
+                </wsse:Password>
+                <wsse:Nonce
+                        EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">
+                    QmhtV24vSmd4aXNsM0JJaHdXQ3YvMEtjRUJhbWpEU0Zvbi9zU1BacmZVMS8yY2VKUFYrTjBTbzFkS0dyd29SZXJJMD0=
+                </wsse:Nonce>
+                <wsu:Created
+                        xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+                    2023-07-05T15:03:47+00:00
+                </wsu:Created>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soap-env:Header>
+    <soap-env:Body>
+        <ns0:PNR_Retrieve xmlns:ns0="http://xml.amadeus.com/PNRRET_17_1_1A">
+            <ns0:retrievalFacts>
+                <ns0:retrieve>
+                    <ns0:type>2</ns0:type>
+                </ns0:retrieve>
+                <ns0:reservationOrProfileIdentifier>
+                    <ns0:reservation>
+                        <ns0:controlNumber>LV4VB6</ns0:controlNumber>
+                    </ns0:reservation>
+                </ns0:reservationOrProfileIdentifier>
+            </ns0:retrievalFacts>
+        </ns0:PNR_Retrieve>
+    </soap-env:Body>
+</soap-env:Envelope>

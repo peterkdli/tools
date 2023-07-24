@@ -1,0 +1,42 @@
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"
+                   xmlns:awsse="http://xml.amadeus.com/2010/06/Session_v3"
+                   xmlns:wsa="http://www.w3.org/2005/08/addressing">
+    <soap-env:Header>
+        <wsa:To>http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+        <wsa:From>
+            <wsa:Address>https://nodeD3.production.webservices.amadeus.com/1ASIWVPKVPK</wsa:Address>
+        </wsa:From>
+        <wsa:Action>http://webservices.amadeus.com/TMDSIQ_15_1_1A</wsa:Action>
+        <wsa:MessageID>urn:uuid:6af7f56b-691e-b644-8538-a02c14794b54</wsa:MessageID>
+        <wsa:RelatesTo RelationshipType="http://www.w3.org/2005/08/addressing/reply">
+            9b03f1d5-4cb5-4035-a202-d59d1299d204
+        </wsa:RelatesTo>
+        <awsse:Session TransactionStatusCode="InSeries">
+            <awsse:SessionId>0FG857CMY0</awsse:SessionId>
+            <awsse:SequenceNumber>8</awsse:SequenceNumber>
+            <awsse:SecurityToken>3UA5111BN9U891JW8ADD32MXX4</awsse:SecurityToken>
+        </awsse:Session>
+    </soap-env:Header>
+    <soap-env:Body>
+        <DocIssuance_IssueMiscellaneousDocumentsReply xmlns="http://xml.amadeus.com/TMDSIR_15_1_1A">
+            <processingStatus>
+                <statusCode>X</statusCode>
+            </processingStatus>
+            <errorGroup>
+                <errorOrWarningCodeDetails>
+                    <errorDetails>
+                        <errorCode>1908</errorCode>
+                    </errorDetails>
+                </errorOrWarningCodeDetails>
+                <errorWarningDescription>
+                    <freeTextDetails>
+                        <textSubjectQualifier>3</textSubjectQualifier>
+                        <source>M</source>
+                        <encoding>1</encoding>
+                    </freeTextDetails>
+                    <freeText>CHECK PASSENGER NUMBER</freeText>
+                </errorWarningDescription>
+            </errorGroup>
+        </DocIssuance_IssueMiscellaneousDocumentsReply>
+    </soap-env:Body>
+</soap-env:Envelope>

@@ -1,0 +1,55 @@
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap-env:Header>
+        <ns0:MessageID xmlns:ns0="http://www.w3.org/2005/08/addressing">2eafa3ef-a6c3-49d8-932b-68398f805ac5
+        </ns0:MessageID>
+        <ns1:Action xmlns:ns1="http://www.w3.org/2005/08/addressing">http://webservices.amadeus.com/PNRADD_17_1_1A
+        </ns1:Action>
+        <ns2:To xmlns:ns2="http://www.w3.org/2005/08/addressing">
+            https://nodeD3.production.webservices.amadeus.com/1ASIWVPKVPK
+        </ns2:To>
+        <wsse:Session xmlns:wsse="http://xml.amadeus.com/2010/06/Session_v3" TransactionStatusCode="InSeries">
+            <wsse:SessionId>0FG857CMY0</wsse:SessionId>
+            <wsse:SequenceNumber>5</wsse:SequenceNumber>
+            <wsse:SecurityToken>3UA5111BN9U891JW8ADD32MXX4</wsse:SecurityToken>
+        </wsse:Session>
+    </soap-env:Header>
+    <soap-env:Body>
+        <ns0:PNR_AddMultiElements xmlns:ns0="http://xml.amadeus.com/PNRADD_17_1_1A">
+            <ns0:pnrActions>
+                <ns0:optionCode>10</ns0:optionCode>
+            </ns0:pnrActions>
+            <ns0:dataElementsMaster>
+                <ns0:marker1/>
+                <ns0:dataElementsIndiv>
+                    <ns0:elementManagementData>
+                        <ns0:reference>
+                            <ns0:qualifier>OT</ns0:qualifier>
+                            <ns0:number>1</ns0:number>
+                        </ns0:reference>
+                        <ns0:segmentName>RF</ns0:segmentName>
+                    </ns0:elementManagementData>
+                    <ns0:freetextData>
+                        <ns0:freetextDetail>
+                            <ns0:subjectQualifier>3</ns0:subjectQualifier>
+                        </ns0:freetextDetail>
+                        <ns0:longFreetext>AMADEUS WEBSERVICES</ns0:longFreetext>
+                    </ns0:freetextData>
+                </ns0:dataElementsIndiv>
+                <ns0:dataElementsIndiv>
+                    <ns0:elementManagementData>
+                        <ns0:reference>
+                            <ns0:qualifier>OT</ns0:qualifier>
+                            <ns0:number>1</ns0:number>
+                        </ns0:reference>
+                        <ns0:segmentName>FM</ns0:segmentName>
+                    </ns0:elementManagementData>
+                    <ns0:commission>
+                        <ns0:commissionInfo>
+                            <ns0:percentage>0.0</ns0:percentage>
+                        </ns0:commissionInfo>
+                    </ns0:commission>
+                </ns0:dataElementsIndiv>
+            </ns0:dataElementsMaster>
+        </ns0:PNR_AddMultiElements>
+    </soap-env:Body>
+</soap-env:Envelope>

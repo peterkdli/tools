@@ -1,0 +1,64 @@
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap-env:Header>
+        <ns0:MessageID xmlns:ns0="http://www.w3.org/2005/08/addressing">1a9f5fc9-09a4-4dbd-853d-aa5a4726b7d0
+        </ns0:MessageID>
+        <ns1:Action xmlns:ns1="http://www.w3.org/2005/08/addressing">http://webservices.amadeus.com/TFOPCQ_19_2_1A
+        </ns1:Action>
+        <ns2:To xmlns:ns2="http://www.w3.org/2005/08/addressing">
+            https://nodeD3.production.webservices.amadeus.com/1ASIWVPKVPK
+        </ns2:To>
+        <wsse:Session xmlns:wsse="http://xml.amadeus.com/2010/06/Session_v3" TransactionStatusCode="InSeries">
+            <wsse:SessionId>0H4IECITVO</wsse:SessionId>
+            <wsse:SequenceNumber>6</wsse:SequenceNumber>
+            <wsse:SecurityToken>2TPYISLQY0A5W1OBWRK8ISPJG2</wsse:SecurityToken>
+        </wsse:Session>
+    </soap-env:Header>
+    <soap-env:Body>
+        <ns0:FOP_CreateFormOfPayment xmlns:ns0="http://xml.amadeus.com/TFOPCQ_19_2_1A">
+            <ns0:transactionContext>
+                <ns0:transactionDetails>
+                    <ns0:code>FP</ns0:code>
+                </ns0:transactionDetails>
+            </ns0:transactionContext>
+            <ns0:fopGroup>
+                <ns0:fopReference/>
+                <ns0:mopDescription>
+                    <ns0:fopSequenceNumber>
+                        <ns0:sequenceDetails>
+                            <ns0:number>1</ns0:number>
+                        </ns0:sequenceDetails>
+                    </ns0:fopSequenceNumber>
+                    <ns0:mopDetails>
+                        <ns0:fopPNRDetails>
+                            <ns0:fopDetails>
+                                <ns0:fopCode>CASH</ns0:fopCode>
+                            </ns0:fopDetails>
+                        </ns0:fopPNRDetails>
+                    </ns0:mopDetails>
+                </ns0:mopDescription>
+                <ns0:mopDescription>
+                    <ns0:fopSequenceNumber>
+                        <ns0:sequenceDetails>
+                            <ns0:number>1</ns0:number>
+                        </ns0:sequenceDetails>
+                    </ns0:fopSequenceNumber>
+                    <ns0:mopDetails>
+                        <ns0:fopPNRDetails>
+                            <ns0:fopDetails>
+                                <ns0:fopStatus>O</ns0:fopStatus>
+                            </ns0:fopDetails>
+                        </ns0:fopPNRDetails>
+                        <ns0:oldFopFreeflow>
+                            <ns0:freeTextDetails>
+                                <ns0:textSubjectQualifier>ZZZ</ns0:textSubjectQualifier>
+                                <ns0:source>M</ns0:source>
+                                <ns0:encoding>1</ns0:encoding>
+                            </ns0:freeTextDetails>
+                            <ns0:freeText>CA</ns0:freeText>
+                        </ns0:oldFopFreeflow>
+                    </ns0:mopDetails>
+                </ns0:mopDescription>
+            </ns0:fopGroup>
+        </ns0:FOP_CreateFormOfPayment>
+    </soap-env:Body>
+</soap-env:Envelope>

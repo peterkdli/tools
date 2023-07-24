@@ -1,0 +1,30 @@
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap-env:Header>
+        <ns0:MessageID xmlns:ns0="http://www.w3.org/2005/08/addressing">fc4b4eb8-573c-4fd2-a4e5-1a068c2fe845
+        </ns0:MessageID>
+        <ns1:Action xmlns:ns1="http://www.w3.org/2005/08/addressing">http://webservices.amadeus.com/PNRRET_17_1_1A
+        </ns1:Action>
+        <ns2:To xmlns:ns2="http://www.w3.org/2005/08/addressing">
+            https://nodeD3.production.webservices.amadeus.com/1ASIWVPKVPK
+        </ns2:To>
+        <wsse:Session xmlns:wsse="http://xml.amadeus.com/2010/06/Session_v3" TransactionStatusCode="InSeries">
+            <wsse:SessionId>0H4IECITVO</wsse:SessionId>
+            <wsse:SequenceNumber>4</wsse:SequenceNumber>
+            <wsse:SecurityToken>2TPYISLQY0A5W1OBWRK8ISPJG2</wsse:SecurityToken>
+        </wsse:Session>
+    </soap-env:Header>
+    <soap-env:Body>
+        <ns0:PNR_Retrieve xmlns:ns0="http://xml.amadeus.com/PNRRET_17_1_1A">
+            <ns0:retrievalFacts>
+                <ns0:retrieve>
+                    <ns0:type>2</ns0:type>
+                </ns0:retrieve>
+                <ns0:reservationOrProfileIdentifier>
+                    <ns0:reservation>
+                        <ns0:controlNumber>LV4VB6</ns0:controlNumber>
+                    </ns0:reservation>
+                </ns0:reservationOrProfileIdentifier>
+            </ns0:retrievalFacts>
+        </ns0:PNR_Retrieve>
+    </soap-env:Body>
+</soap-env:Envelope>

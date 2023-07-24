@@ -1,0 +1,133 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:awsse="http://xml.amadeus.com/2010/06/Session_v3" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+    <soap:Header>
+        <wsa:To>http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+        <wsa:From>
+            <wsa:Address>https://nodeD3.production.webservices.amadeus.com/1ASIWVPKVPK</wsa:Address>
+        </wsa:From>
+        <wsa:Action>http://webservices.amadeus.com/Ticket_RebookAndRepricePNR_1.0</wsa:Action>
+        <wsa:MessageID>urn:uuid:dd84890f-461e-9634-c584-b0f96f9f7a99</wsa:MessageID>
+        <wsa:RelatesTo RelationshipType="http://www.w3.org/2005/08/addressing/reply">
+            7610366f-2a33-4e88-8505-de16559a82d7
+        </wsa:RelatesTo>
+        <awsse:Session TransactionStatusCode="InSeries">
+            <awsse:SessionId>0FG857CMY0</awsse:SessionId>
+            <awsse:SequenceNumber>2</awsse:SequenceNumber>
+            <awsse:SecurityToken>3UA5111BN9U891JW8ADD32MXX4</awsse:SecurityToken>
+        </awsse:Session>
+    </soap:Header>
+    <soap:Body>
+        <AMA_TicketRebookAndRepricePNRRS xmlns="http://xml.amadeus.com/2010/06/Ticket_RebookAndRepricePNR_v1"
+                                         xmlns:ns2="http://xml.amadeus.com/2010/06/Retailing_Types_v2"
+                                         xmlns:ns6="http://xml.amadeus.com/2010/06/FareInternalTypes_v2"
+                                         TransactionIdentifier="1X75J1VX67EK18IKPB3QSB9FE1" Version="1.0">
+            <Success>
+                <Reservation BookingIdentifier="3WKL5P"/>
+                <Rebooking>
+                    <CancelledElements>
+                        <ns2:Ref TattooType="ST" TattooValue="1"/>
+                    </CancelledElements>
+                    <Bounds>
+                        <Bound NIP="1">
+                            <Segment LineNumber="2" RequestID="SEG1" TattooType="ST" TattooValue="3" bkgClass="G"
+                                     isOpenSegment="false" segmentStatus="HK">
+                                <ns2:serviceProvider code="AA" name="AMERICAN AIRLINES"/>
+                                <ns2:identifier>274</ns2:identifier>
+                                <ns2:start dateTime="2023-08-22T12:21:00">
+                                    <ns2:locationCode>LAX</ns2:locationCode>
+                                </ns2:start>
+                                <ns2:end dateTime="2023-08-22T21:00:00">
+                                    <ns2:locationCode>JFK</ns2:locationCode>
+                                </ns2:end>
+                            </Segment>
+                        </Bound>
+                    </Bounds>
+                    <Remarks>
+                        <Remark Content=" AIRLINE CHANGE FEE" LineNumber="18" TattooType="OT" TattooValue="42"
+                                Type="RIA">
+                            <ns2:Associations>
+                                <ns2:Ref LineNumber="2" RequestID="SEG1" TattooType="ST" TattooValue="3"/>
+                                <ns2:Ref LineNumber="1" TattooType="PT" TattooValue="2"/>
+                            </ns2:Associations>
+                        </Remark>
+                        <Remark Content="NOTIFY PASSENGER PRIOR TO TICKET PURCHASE &amp; CHECK-IN: FEDERAL LAWS FORBID THE CARRIAGE OF HAZARDOUS MATERIALS - GGAMAUSHAZ"
+                                LineNumber="15" TattooType="OT" TattooValue="37" Type="RM">
+                            <ns2:Associations>
+                                <ns2:Ref LineNumber="2" RequestID="SEG1" TattooType="ST" TattooValue="3"/>
+                            </ns2:Associations>
+                        </Remark>
+                        <Remark Content=" EXCHANGE TICKET NUMBER 001-8005323634" LineNumber="17" TattooType="OT"
+                                TattooValue="41" Type="RIA">
+                            <ns2:Associations>
+                                <ns2:Ref LineNumber="2" RequestID="SEG1" TattooType="ST" TattooValue="3"/>
+                                <ns2:Ref LineNumber="1" TattooType="PT" TattooValue="2"/>
+                            </ns2:Associations>
+                        </Remark>
+                    </Remarks>
+                    <FareDiscounts/>
+                </Rebooking>
+                <Repricing>
+                    <ItineraryRepricing>
+                        <PricingDetails>
+                            <PricingRecords>
+                                <PricingRecord>
+                                    <ns6:PaxName FirstName="Matias" LastName="Viel"/>
+                                    <ns6:Price Amount="23628" CurrencyCode="USD" DecimalPlaces="2" Type="NewBase"/>
+                                    <ns6:Price Amount="32465" CurrencyCode="USD" DecimalPlaces="2" Type="OldBase"/>
+                                    <ns6:Price Amount="9500" CurrencyCode="USD" DecimalPlaces="2" Type="ResidualValue"/>
+                                    <ns6:Price Amount="26890" CurrencyCode="USD" DecimalPlaces="2" Type="NewTotalFare"/>
+                                    <ns6:Price Amount="3262" CurrencyCode="USD" DecimalPlaces="2" Type="NewTax"/>
+                                    <ns6:Price Amount="0" CurrencyCode="USD" DecimalPlaces="2"
+                                               Type="TotalAdditionalCollection"/>
+                                    <ns6:Price Amount="3925" CurrencyCode="USD" DecimalPlaces="2" Type="OldTax"/>
+                                    <ns6:Price Amount="-8837" CurrencyCode="USD" DecimalPlaces="2" Type="BalanceBase"/>
+                                    <ns6:Price Amount="-9500" CurrencyCode="USD" DecimalPlaces="2" Type="GrandTotal"/>
+                                    <ns6:Price Amount="-663" CurrencyCode="USD" DecimalPlaces="2" Type="BalanceTax"/>
+                                    <ns6:Price Amount="-9500" CurrencyCode="USD" DecimalPlaces="2"
+                                               Type="TicketDifference"/>
+                                    <ns6:Price Amount="0" CurrencyCode="USD" DecimalPlaces="2" Type="Penalty"/>
+                                    <ns6:Price Amount="36390" CurrencyCode="USD" DecimalPlaces="2" Type="OldTotalFare"/>
+                                    <ns6:PricingInfo PricingType="TQR">
+                                        <ns6:AssociatedPNRElement Tattoo="2" Type="PT"/>
+                                        <ns6:AssociatedPNRElement Tattoo="3" Type="ST"/>
+                                    </ns6:PricingInfo>
+                                </PricingRecord>
+                                <PricingRecord>
+                                    <ns6:PaxName FirstName="Matias" LastName="Viel"/>
+                                    <ns6:Price Amount="23628" CurrencyCode="USD" DecimalPlaces="2" Type="NewBase"/>
+                                    <ns6:Price Amount="0" CurrencyCode="USD" DecimalPlaces="2" Type="GrandTotal"/>
+                                    <ns6:Price Amount="0" CurrencyCode="USD" DecimalPlaces="2" Type="Total"/>
+                                    <ns6:Tax Amount="560" CurrencyCode="USD" DecimalPlaces="2" Indicator="X"
+                                             IsoCode="AY" NatureCode="SE"/>
+                                    <ns6:Tax Amount="1772" CurrencyCode="USD" DecimalPlaces="2" Indicator="X"
+                                             IsoCode="US" NatureCode="LO"/>
+                                    <ns6:Tax Amount="450" CurrencyCode="USD" DecimalPlaces="2" Indicator="X"
+                                             IsoCode="XF"/>
+                                    <ns6:Tax Amount="480" CurrencyCode="USD" DecimalPlaces="2" Indicator="X"
+                                             IsoCode="ZP" NatureCode="VO"/>
+                                    <ns6:PricingInfo
+                                            Endorsement="USD324.65 NONREF - /C1 NONREF/FAREDIF/ CXL BY FLT TIME OR NOVALUE -BG:AA"
+                                            FareCalc="LAX AA JFK236.28USD236.28END ZP LAX4.80 XF LAX4.5"
+                                            PricingRecordRefIDs="2" PricingType="TST">
+                                        <ns6:AssociatedPNRElement Tattoo="2" Type="PT"/>
+                                        <ns6:AssociatedPNRElement Tattoo="3" Type="ST"/>
+                                    </ns6:PricingInfo>
+                                    <ns6:FareComponent Destination="NYC" Number="1" Origin="LAX" Type="FC">
+                                        <ns6:AssociatedPNRElement Tattoo="3" Type="ST"/>
+                                        <ns6:FareBasis FareBasisCode="GUAHUNN1"/>
+                                        <ns6:FareFamily Name="MAIN" Owner="AA"/>
+                                    </ns6:FareComponent>
+                                    <ns6:Coupon SegmentTattoo="3">
+                                        <ns6:FareBasis FareBasisCode="GUAHUNN1"/>
+                                        <ns6:FreeBagAllowance Measure="0" Type="N"/>
+                                        <ns6:DateValidity Type="NVA">2024-08-22</ns6:DateValidity>
+                                    </ns6:Coupon>
+                                </PricingRecord>
+                            </PricingRecords>
+                        </PricingDetails>
+                    </ItineraryRepricing>
+                </Repricing>
+            </Success>
+        </AMA_TicketRebookAndRepricePNRRS>
+    </soap:Body>
+</soap:Envelope>

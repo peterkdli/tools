@@ -1,0 +1,32 @@
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap-env:Header>
+        <ns0:MessageID xmlns:ns0="http://www.w3.org/2005/08/addressing">9ea167bf-6a0f-4ff5-abe7-bb0b1f13de50
+        </ns0:MessageID>
+        <ns1:Action xmlns:ns1="http://www.w3.org/2005/08/addressing">http://webservices.amadeus.com/TATREQ_20_1_1A
+        </ns1:Action>
+        <ns2:To xmlns:ns2="http://www.w3.org/2005/08/addressing">
+            https://nodeD3.production.webservices.amadeus.com/1ASIWVPKVPK
+        </ns2:To>
+        <wsse:Session xmlns:wsse="http://xml.amadeus.com/2010/06/Session_v3" TransactionStatusCode="InSeries">
+            <wsse:SessionId>0H4IECITVO</wsse:SessionId>
+            <wsse:SequenceNumber>9</wsse:SequenceNumber>
+            <wsse:SecurityToken>2TPYISLQY0A5W1OBWRK8ISPJG2</wsse:SecurityToken>
+        </wsse:Session>
+    </soap-env:Header>
+    <soap-env:Body>
+        <ns0:Ticket_ProcessEDoc xmlns:ns0="http://xml.amadeus.com/TATREQ_20_1_1A">
+            <ns0:msgActionDetails>
+                <ns0:messageFunctionDetails>
+                    <ns0:messageFunction>131</ns0:messageFunction>
+                </ns0:messageFunctionDetails>
+            </ns0:msgActionDetails>
+            <ns0:infoGroup>
+                <ns0:docInfo>
+                    <ns0:documentDetails>
+                        <ns0:number>2209792028086</ns0:number>
+                    </ns0:documentDetails>
+                </ns0:docInfo>
+            </ns0:infoGroup>
+        </ns0:Ticket_ProcessEDoc>
+    </soap-env:Body>
+</soap-env:Envelope>
